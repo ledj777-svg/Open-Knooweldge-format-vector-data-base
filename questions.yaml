@@ -1,0 +1,30 @@
+- q: Why not pass every OKF file to the model on each request?
+  gold: [concepts/okf]
+  must_contain: ["linearly"]
+- q: Which embedding model has 384 dimensions and runs on CPU?
+  gold: [concepts/embeddings]
+  must_contain: ["all-MiniLM-L6-v2", "384"]
+- q: What does a cross-encoder do and why is it slow?
+  gold: [concepts/reranking]
+  must_contain: ["once per candidate"]
+- q: Which faithfulness metric does RAGAS report?
+  gold: [practices/evaluation]
+  must_contain: ["faithfulness"]
+- q: How do I keep PII out of the vector index?
+  gold: [practices/guardrails]
+  must_contain: ["ingestion time"]
+- q: What is parent-child chunking?
+  gold: [concepts/chunking]
+  must_contain: ["larger parent section"]
+- q: When can I skip the re-ranker?
+  gold: [concepts/reranking]
+  must_contain: ["small, well-structured"]
+- q: Can I cache the whole knowledge base in the prompt instead of retrieving?
+  gold: [concepts/prompt-caching]
+  must_contain: ["cached prefix"]
+- q: Which local vector database is easy to embed in Python?
+  gold: [concepts/vector-databases]
+  must_contain: ["Chroma"]
+- q: How does an agent get long-term facts without bloating prompts?
+  gold: [concepts/agents]
+  must_contain: ["without bloating"]
